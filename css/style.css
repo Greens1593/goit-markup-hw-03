@@ -1,0 +1,220 @@
+:root{
+    --font-color-header: #212121;
+    --font-color-text: #757575;
+    --font-color-footer-location: #FFFFFF;
+    --font-color-footer-contacts: rgba(255,255,255,.6);
+    --font-color-hower: #2196F3;
+    --font-color-hower-btn: #FFFFFF;
+    --hero-font-color: #FFFFFF;
+    --header-background-color: #FFFFFF;
+    --main-background-color: #FFFFFF;
+    --main-background-color-aditional: #F5F4FA;
+    --hero-backround-color: #2F303A;
+    --footer-background-color: #2F303A;
+    --filter-btn-background-color: #F5F4FA;
+    --filter-btn-hower-background: #2196F3;
+}
+body{
+    font-family: 'Roboto', 'Raleway', 'Times New Roman', sans-serif;
+    color: var(--font-color-text);
+    background-color: var(--main-background-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container{
+    display: flex;
+}
+.btn{
+    min-width: 216px;
+    min-height: 50px;
+    background-color: #2196F3;
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+/* Remove default style */
+.user-links{
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+.user-list{
+    list-style: none;
+    color: inherit;
+}
+/* Nav-bar */
+.container, .navbar{
+    min-height: 80px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.container, .nav-links{
+    min-width: 281px;
+    justify-content: space-between;
+}
+.logo{
+    color: #000000;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+.logo-start{
+    color: #2196F3;
+}
+.nav-links{
+    color: var(--font-color-header);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contacts{
+    color: var(--font-color-header);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact:hover, .contact:focus, .nav-link:hover, .nav-link:focus, .location:hover,
+.location:focus,
+.contact:hover,
+.contact:focus{
+    color: var(--font-color-hower)
+}
+/* Main page main */
+.header{
+    color: var(--font-color-header);
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* hero */
+.hero{
+    margin-bottom: 95px;
+    background-color: var(--hero-backround-color);
+    color: var(--hero-font-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-title{
+    margin-bottom: 40px;
+}
+.hero > .container{
+    flex-direction: column;
+    min-height: 600px;
+    justify-content: center;
+}
+/* kinds */
+.kinds{
+    background-color: var(--main-background-color);
+}
+.container.kinds{
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0, auto;
+    margin-bottom: 94px;
+}
+.kinds-header{
+    color: var(--font-color-header);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.kinds-item{
+    font-size: 14px;
+    line-height: 1.171;
+}
+.our-team-section{
+    background-color: var(--main-background-color-aditional);
+}
+.name{
+    color: var(--font-color-header);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.position{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* footer */
+.footer{
+    background-color: var(--footer-background-color);
+}
+.logo-footer-end{
+    color: #FFFFFF;
+}
+.contacts-in-footer {
+    color: var(--font-color-footer-contacts);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.location{
+    color: var(--font-color-footer-location);
+}
+/* Portfilio main*/
+.hiden-header{
+    color: rgb(255, 255, 255)
+}
+
+.btn-filter{
+    background-color: var(--filter-btn-background-color);
+    color: var(--font-color-header);
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.btn-filter:hover, .btn-filter:focus{
+    background-color: var(--filter-btn-hower-background);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.card-header{
+    color: var(--font-color-header);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.card-description{
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
