@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 p{
     margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
 }
 .container{
     width: 1200px;
@@ -130,6 +135,10 @@ p{
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+.hero.section{
+    padding-bottom: 0;
+    padding-top: 0;
+}
 .hero .container{
     flex-direction: column;
     align-items: center;
@@ -168,10 +177,11 @@ p{
     margin-right: 30px;
 }
 .kind{
-    width: 270px;
+    width: (calc(100% - 90px) / 4);
 }
 .kind-header{
     color: var(--font-color-header);
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -179,9 +189,13 @@ p{
 }
 .kind-item{
     font-size: 14px;
-    line-height: 1.171;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 /* What are we doing */
+.works.section{
+    padding-top: 0;
+}
 .works.section .container{
     flex-direction: column;
 }
@@ -303,21 +317,30 @@ p{
 .portfolio-cards{
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--portfolio-set-gap));
-    margin-top: calc(-1 * var(--portfolio-set-gap));
-    padding-left: 0;
+    padding: 0;
+    width: 1200px;
+}
+.portfolio-card{
+    flex-basis: calc((100% - var(--portfolio-set-gap)*2) / 3);
+    margin-right: var(--portfolio-set-gap);
+    margin-bottom: var(--portfolio-set-gap);
+}
+.portfolio-card:nth-child(3n){
+    margin-right: 0;
+}
+.portfolio-card:nth-child(n + 7){
+    margin-bottom: 0;
 }
 .portfolio-card-item{
-    flex-basis: calc(100% / 3 - var(--portfolio-set-gap));
-    margin-left: var(--portfolio-set-gap);
-    margin-top: var(--portfolio-set-gap);
     padding: 20px 24px;
+    background-color: #FFFFFF;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
 }
 .card-header{
     color: var(--font-color-header);
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
