@@ -52,6 +52,7 @@ img{
     margin-bottom: 0;
     list-style: none;
     color: inherit;
+    padding: 0;
 }
 /* Main-header */
 .main-header{
@@ -136,15 +137,14 @@ img{
     text-transform: uppercase;
 }
 .hero.section{
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-bottom: 200px;
+    padding-top: 200px;
 }
 .hero .container{
     flex-direction: column;
     align-items: center;
 }
 .hero .hero-title{
-    padding-top: 200px;
     margin-bottom: 30px;
 }
 .btn-hero {
@@ -159,7 +159,6 @@ img{
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    margin-bottom: 200px;
 }
 
 /* kinds */
@@ -223,6 +222,9 @@ img{
 .user-list.container-works-and-teams .worker-card:not(:last-child){
     margin-right: 30px;
 }
+.worker-info{
+    padding: 30px 0;
+}
 .name{
     color: var(--font-color-header);
     font-weight: 500;
@@ -230,23 +232,27 @@ img{
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 30px 0 10px 0;
+    margin-bottom: 10px;
 }
 .position{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 0 0 30px 0;
 }
 /* footer */
 .footer{
     background-color: var(--footer-background-color);
-    height: 252px;
-}
-.footer.contacts-in-footer .container{
-    flex-direction: column;
     padding-top: 60px;
+    padding-bottom: 60px;
+    color: var(--font-color-footer-contacts);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer .container{
+    flex-direction: column;
 }
 .footer-logo{
     display: inline-block;
@@ -255,23 +261,21 @@ img{
 .logo-footer-end{
     color: #FFFFFF;
 }
-.footer-address-container{
-    display: flex;
-    flex-direction: column;
-    min-width: 231px;
-    min-height: 81px;
-    justify-content: space-between;
-}
-.contacts-in-footer {
-    color: var(--font-color-footer-contacts);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
-.location{
+
+.footer-location {
+    display: block;
     color: var(--font-color-footer-location);
+    margin-bottom: 9px;
 }
+
+.footer-email{
+    display: block;
+    margin-bottom: 9px;
+}
+.footer-tel{
+    display: block;
+}
+
 /* Portfilio main*/
 .portfolio .container{
     flex-direction: column;
